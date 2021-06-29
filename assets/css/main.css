@@ -2101,7 +2101,7 @@ input, select, textarea {
 
 		#logo p {
 			color: #eee;
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.75);
 			text-transform: uppercase;
 			margin: 1.25em 0 0 0;
 			display: block;
@@ -2311,7 +2311,9 @@ input, select, textarea {
 		#footer button,
 		#footer .button {
 			color: #fff;
-			box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.5);
+			box-shadow: inset 0px 0px 0px 0px #fff;
+			border: 2px solid #fff;
+			/* background-color: white; */
 		}
 
 			#footer input[type="button"]:hover,
@@ -2319,8 +2321,8 @@ input, select, textarea {
 			#footer input[type="reset"]:hover,
 			#footer button:hover,
 			#footer .button:hover {
-				color: #fff;
-				box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.65);
+				color: #81D3EB;
+				border: 2px solid #81D3EB;
 			}
 
 			#footer input[type="button"]:active,

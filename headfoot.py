@@ -5,7 +5,7 @@ import re
 
 # Source and Target List
 source = 'index.html'
-targets = ['application.html','codeofconduct.html','faq.html']
+targets = ['application.html','sponsors.html','faq.html','codeofconduct.html']
 
 # Tags we will split on
 tags = ['<!-- Header -->','<!-- Footer -->']
