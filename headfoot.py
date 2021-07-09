@@ -5,10 +5,10 @@ import re
 
 # Source and Target List
 source = 'index.html'
-targets = ['application.html','sponsors.html','faq.html','codeofconduct.html']
+targets = ['application.html','sponsors.html','faq.html','codeofconduct.html','loc.html']
 
 # Tags we will split on
-tags = ['<!-- Header -->','<!-- Footer -->']
+tags = ['<!-- Header -->','<!-- Footer -->','<!-- Sponsors -->']
 
 # Go through targets and replace
 for target in targets:
@@ -20,6 +20,8 @@ for target in targets:
     
     # Iterate over Tags
     for tag in tags:
+
+        if tag not in t: continue
 
         # Replace
         t = t.split(tag)
