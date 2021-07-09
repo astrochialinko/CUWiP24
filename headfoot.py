@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 
 # Import regex
+import os
 import re
 
 # Source and Target List
 source = 'index.html'
-targets = ['application.html','sponsors.html','faq.html','codeofconduct.html','loc.html']
+targets = [l for l in os.listdir('.') if 'html' in l and  l != 'index.html']
+print(targets)
 
+x[0]
 # Tags we will split on
 tags = ['<!-- Header -->','<!-- Footer -->','<!-- Sponsors -->']
 
