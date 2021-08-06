@@ -129,6 +129,43 @@
 					<div class="title">Frequently Asked Questions</div>
 					<div class="container">
 
+						<a id='expAll' href="#/">Expand All</a>
+						<script>
+							// Reference the toggle link
+							var xa = document.getElementById('expAll');
+
+							// Register link on click event
+							xa.addEventListener('click', function(e) {
+
+							/* Toggle the two classes that represent "state"
+							|| determined when link is clicked
+							*/
+							e.target.classList.toggle('exp');
+							e.target.classList.toggle('col');
+
+							// Collect all <details> into a NodeList
+							var details = document.querySelectorAll('details');
+
+							/* Convert NodeList into an array then iterate
+							|| throught it...
+							*/
+							Array.from(details).forEach(function(obj, idx) {
+
+								/* If the link has the class .exp...
+								|| make each <detail>'s open attribute true
+								*/
+								if (e.target.classList.contains('exp')) {
+								obj.open = true;
+								// Otherwise make it false
+								} else {
+								obj.open = false;
+								}
+
+							});
+
+							}, false);
+						</script> 
+
 						<!-- Content -->
 							<div id="content">
 								<article class="box post">
@@ -136,7 +173,7 @@
 									<div id="about">
 										
 										<header class="style1"><h2>About</h2></header>
-
+										 
 										<h1>Q: What is CUWiP?</h1>
 										<details><summary>Click here for answer...</summary>
 										<p>The APS Conferences for Undergraduate Women in Physics (CUWiP) are three-day regional conferences for undergraduate physics majors. The 2022 conferences will be held January 21-23, 2022.</p>
@@ -292,7 +329,7 @@
 
 										<h1>Q: Where do I stay during the conference?</h1>
 										<details><summary>Click here for answer...</summary>
-										<p>Students will be accommodated at <a target="_blank" href="https://biosphere2.org/">Biosphere 2</a>. Please visit our <a href="travel.html">Travel page</a> for more information. If you are driving to the conference, you may park at <parking info>. Do not make your own hotel reservations. You will be assigned a roommate. If you know someone who is attending the conference and would like to room together, please let us know at <a target="_blank" href="mailto:cuwip@arizona.edu">cuwip@arizona.edu</a>
+										<p>Students will be accommodated at <a target="_blank" href="https://biosphere2.org/">Biosphere 2</a>. Please visit our <a href="travel.html">Travel page</a> for more information. If you are driving to the conference, you may park on site for free. Do not make your own hotel reservations. You will be assigned a roommate. If you know someone who is attending the conference and would like to room together, please let us know at <a target="_blank" href="mailto:cuwip@arizona.edu">cuwip@arizona.edu</a>
 										</p> and we will do our best to accommodate.  Single occupancy rooms are limited and we will work to make accommodations if possible.
 										</details>	
 
