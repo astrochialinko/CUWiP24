@@ -2567,7 +2567,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) and (min-width: 737px) {
 
-				#footer .feature-list > .row > :nth-child(2) > section {
+				#footer .feature-list > .row > :nth-child(0) > section {
 					border-top: 0;
 					padding-top: 0;
 				}
