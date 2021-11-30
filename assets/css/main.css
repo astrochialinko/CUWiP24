@@ -2242,7 +2242,7 @@ input, select, textarea {
 			color: #fff;
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 1);
-			font-size: 2em;
+			font-size: 1.9em;
 			letter-spacing: 0.075em;
 			line-height: 1.35em;
 			padding: 1em 0 1em 0;
@@ -2480,7 +2480,7 @@ input, select, textarea {
 				}
 
 				#intro p.style2 {
-					font-size: 1.6em;
+					font-size: 1.65em;
 				}
 
 		/* Footer */
