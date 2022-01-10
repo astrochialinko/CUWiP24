@@ -9,7 +9,8 @@ source = 'index.html'
 targets = [l for l in os.listdir('.') if '.html' in l and  l != 'index.html']
 
 # Tags we will split on
-tags = ['<!-- Header -->','<!-- Footer -->','<!-- Sponsors -->']
+# ONLY DO FIRST SINCE CANCELLED
+tags = ['<!-- Header -->','<!-- Footer -->','<!-- Sponsors -->'][0:1]
 
 # Go through targets and replace
 for target in targets:
