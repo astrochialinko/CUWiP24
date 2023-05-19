@@ -6,7 +6,7 @@ import re
 
 # Source and Target List
 source = 'index.html'
-targets = [l for l in os.listdir('.') if '.html' in l and  l != 'index.html']
+targets = [l for l in os.listdir('.') if '.html' in l and  l != source]
 
 # Tags we will split on
 # ONLY DO FIRST SINCE CANCELLED
